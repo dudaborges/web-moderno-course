@@ -7,4 +7,6 @@ console.log(escola.substring(2, 4))//vai do 2 ao 4)
 
 console.log('Escola '.concat(escola).concat('!'))//Concatenação
 
+console.log(escola.replace(3, 'e'))//substitui o 3 por e
+
 console.log('Ana,Maria,João'.split(','))//para retornar um array com cada vírgula
