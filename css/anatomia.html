@@ -14,9 +14,14 @@
            width: calc(100% - 100px);
         }
 
-        /* Usando uma pseudo-classe (quando passa o mouse em cima) */
+        /* pseudo-classe (hover quando passa o mouse em cima) */
         .selector:hover{
             background-color: rgb(173, 0, 0);
+        }
+
+        /* pseudo-elemento (first-letter primeiro elemento) */
+        .selector::first-letter{
+            font-size: 60px;
         }
     </style>
 </head>
