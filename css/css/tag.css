@@ -5,3 +5,12 @@ body{
 ol, ul{
     padding: 0;
 }
+
+li{
+    margin-left: 60px;
+}
+
+.tag{
+    border: solid 4px;
+    margin: 20px;
+}
