@@ -14,3 +14,13 @@ li{
     border: solid 4px;
     margin: 20px;
 }
+
+.tag label{
+    color: #fff;
+    font-size: 25px;
+    /* para alinhar no topo da vertical */
+    vertical-align: top;
+    /* margin são os espaçamentos */
+    margin-right: 10px;
+    padding: 0px 5px 3px 3px;
+}
