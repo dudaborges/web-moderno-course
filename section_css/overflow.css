@@ -1,0 +1,31 @@
+div{
+    width: 100px;
+    height: 80px;
+}
+
+#hidden{
+    background-color: brown;
+    /* o overflow hidden some com o conteúdo que ultrapassa o limite da div */
+    overflow: hidden;
+}
+
+
+#scroll{
+    background-color: blueviolet;
+    /* O overflow scroll coloca um scroll dentro da div para mostrar todo o conteúdo que ultrapassa  o limite */
+    overflow: scroll;
+}
+
+#scroll-x{
+    background-color: chocolate;
+    /* colocar scroll no eixo x e some com o scroll do eixo y */
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#scroll-y{
+    background-color: aqua;
+    /* coloca scroll no eixo y e some com o scroll do eixo x */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
