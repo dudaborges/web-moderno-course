@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+div{
+    background-color: rgb(40, 154, 169);
+    width: 100%;
+    height: 500px;
+    /* O padding e border acaba crescendo o tamanho da div, e o width 100% acaba estrapolando o tamanho e gera uma rolagem lateral. O border box serve para o border e o padding contar como tamanho também e não estrapolar o tamanho do width definido*/
+    padding: 100px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+/* Se você definir o width de 600px e colocar mais padding e border, os dois serão considerados como o tamanho também. Tudo o que tiver da borda para dentro será considerado como 600px */
+
+/* E o content-box é considerado apenas o conteúdo como 600px. Tudo o que for para fora do conteúdo será considerado como um tamanho a mais. */
