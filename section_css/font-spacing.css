@@ -3,4 +3,6 @@ p{
     word-spacing: 10px;
     /* espaçamento entre as letras */
     letter-spacing: 10px;
+    /* espaçamento entre as linhas */
+    line-height: 20px;
 }
