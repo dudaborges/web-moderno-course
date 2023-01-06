@@ -1,0 +1,28 @@
+.quadrado{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#primeiro{
+    background-color: blueviolet;
+}
+
+#segundo{
+    background-color: brown;
+    /* o float não é recomendado a ser utilizado, pois o flexbox faz a mesma função de forma mais prática */
+    /* float é flutuar */
+    float: right;
+}
+
+#terceiro{
+    background-color: cadetblue;
+    /* usando o clear faz com o que o elemento não ocupe o lugar do que está flutuando */
+    /* se houver elementos flutuando para esquerda e direita, utilize o both */
+    clear: right;
+}
+
+#quarto{
+    background-color: chocolate;
+    float: right;
+}
