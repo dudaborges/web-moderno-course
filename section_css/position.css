@@ -1,0 +1,32 @@
+div{
+    font-size: 60px;
+    padding: 30px;
+    border: solid 5px black;
+}
+
+#static{
+    /* o elemento estático fica na posição de acordo com os seus componentes e a disposição dos outros elementos. Ele não leva em consideração o top e o left por exemplo. O Static é o padrão de todos os elementos*/
+    top: 100px;
+    left: 100px;
+    position: static;
+}
+
+#fixed{
+    /* fica fixado com o rolamento da página */
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+}
+
+#relative{
+    /* relativo ao elemento anterior, e não ao viewport como é no caso do fixed. */
+    position: relative;
+    top: 10px;
+}
+
+#absolute{
+    /* relacionado a viewport quando não está dentro de um elemento relativo */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
