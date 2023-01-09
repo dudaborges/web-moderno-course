@@ -1,0 +1,68 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+header.cabeçalho{
+    background-color: rgb(33, 32, 32);
+    position: relative;
+    padding: 10px;
+}
+
+div.logo{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+img{
+    width: 300px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+nav.menu{
+    display: inline-block;
+}
+
+nav.menu > ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.autenticacao{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}
+
+.autenticacao > a:nth-of-type(1){
+    margin-right: 15px;
+}
+
+.autenticacao > a:nth-of-type(2){
+    background-color: brown;
+    border-radius: 15px;
+    padding: 10px;
+
+}
