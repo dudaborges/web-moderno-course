@@ -1,11 +1,16 @@
+body{
+    height: 2200px;
+}
+
 div{
     font-size: 60px;
     padding: 30px;
     border: solid 5px black;
+    margin-bottom: 90px;
 }
 
 #static{
-    /* o elemento estático fica na posição de acordo com os seus componentes e a disposição dos outros elementos. Ele não leva em consideração o top e o left por exemplo. O Static é o padrão de todos os elementos*/
+    /* o elemento estático fica na posição de acordo com os seus componentes e a distribuição dos outros elementos. Ele não leva em consideração o top e o left por exemplo. O Static é o padrão de todos os elementos*/
     top: 100px;
     left: 100px;
     position: static;
@@ -29,4 +34,22 @@ div{
     position: absolute;
     left: 0px;
     bottom: 0px;
+}
+
+#relative-ab{
+    position: relative;
+    height: 200px;
+}
+
+#absolute-rel{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#sticky{
+    position: -webkit-sticky; /*isso é para funcionar o sticky no safari*/
+    position: sticky;
+    width: 300px;
+    top: 0px;
 }
