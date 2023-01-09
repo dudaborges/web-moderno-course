@@ -2,44 +2,57 @@
     font-family: 'Oswald', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     background-color: lightgrey;
 }
 
-header.cabeçalho{
+header.cabecalho{
     background-color: rgb(33, 32, 32);
     position: relative;
     padding: 10px;
+    border-bottom: solid 2px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
 }
 
 div.logo{
     display: inline-block;
     margin-right: 25px;
+    padding: 15px;
+    height: 80px;
 }
 
-img{
-    width: 300px;
+div.logo img{
+    height: 100%;
 }
 
 .menu-toggle{
     display: none;
     position: absolute;
     right: 10px;
-    top: 25px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    border: solid 1px #777;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 15px;
 }
 
 nav.menu{
     display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
 }
 
-nav.menu > ul{
+nav.menu ul{
     list-style: none;
 }
 
-li{
+nav.menu li{
     display: inline-block;
     margin-right: 15px;
     font-size: 20px;
@@ -48,9 +61,17 @@ li{
 a{
     color: white;
     text-decoration: none;
+    padding: 15px;
 }
 
-@media (max-width: 650px){
+/* o a.selected é o estilo da classe que será adicionada via javascript */
+.menu a:hover,
+.menu a.selected{
+    background-color: #4faddb;
+    color: #000;
+}
+
+@media (max-width: 810px){
     nav.menu{
         display: none;
     }
@@ -61,11 +82,10 @@ a{
 
 .autenticacao{
     display: inline-block;
-    margin-right: 15px;
     font-size: 20px;
     position: absolute;
     right: 0px;
-    top: 25px;
+    margin: 20px 15px;
 }
 
 .autenticacao > a:nth-of-type(1){
@@ -79,7 +99,7 @@ a{
 
 }
 
-@media (max-width: 780px){
+@media (max-width: 970px){
     .autenticacao{
         display: none;
     }
