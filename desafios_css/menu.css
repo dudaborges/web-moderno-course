@@ -25,6 +25,10 @@ img{
 
 .menu-toggle{
     display: none;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    padding: 5px 10px;
 }
 
 nav.menu{
@@ -39,12 +43,20 @@ li{
     display: inline-block;
     margin-right: 15px;
     font-size: 20px;
-    
 }
 
 a{
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 650px){
+    nav.menu{
+        display: none;
+    }
+    .menu-toggle{
+        display: inline-block;
+    }
 }
 
 .autenticacao{
@@ -65,4 +77,10 @@ a{
     border-radius: 15px;
     padding: 10px;
 
+}
+
+@media (max-width: 780px){
+    .autenticacao{
+        display: none;
+    }
 }
