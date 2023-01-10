@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.curso{
+    position: relative;
+    border: solid 1px #ccc;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.353);
+    width: 260px;
+    height: 300px;
+    margin: 30px;
+    padding: 10px;
+    display: inline-block;
+    /* O inline-block se alinha através do baseline por padrão. Nesse caso, foi necessário mudar o baseline para top. Dessa forma os elementos se alinham no topo, independente do seu tamanho ou conteúdo. */
+    vertical-align: top;
+}
+
+.curso img{
+    width: 100%;
+    max-height: 50%;
+}
+
+.curso-info{
+    /* com limite de altura, o conteúdo que ultrapassar o limite irá sumir (overflow hidden) */
+    overflow: hidden;
+    padding: 10px;
+    height: 90px;
+}
+
+.curso-info h4{
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.curso-info p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.curso-preco{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.preco-de{
+    color: brown;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.preco-por{
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 25px;
+}
