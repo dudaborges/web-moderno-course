@@ -1,0 +1,24 @@
+div{
+    border: solid 5px dodgerblue;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.big{
+    /* fica 50% maior */
+    font-size: 1.5em;
+}
+
+.flex-container{
+    /* passou a ser um flex container*/
+    display: flex;
+    /* por padrão, o eixo principal vem com linha (horizontalmente), que se chama row*/
+    /* flex direction column muda o eixo principal para coluna*/
+    flex-direction: column;
+    /* column reverse muda a ordem dos itens */
+    flex-direction: column-reverse;
+    /* row reverse muda a ordem dos itens, da direita pra esquerda*/
+    flex-direction: row-reverse;
+    /* propriedade padrão: row. Que é alinhas em linhas */
+    flex-direction: row;
+}
