@@ -1,0 +1,28 @@
+.flex-container{
+    display: flex;
+    border: 3px solid black;
+    width: 600px;
+    height: 300px;
+}
+
+.flex-container div{
+    border: 2px solid rebeccapurple;
+    font-size: 30px;
+    width: 100px;
+    /* o flex grow pega o espaço que sobrou e divide pela quantidade de pesos.
+    Por exemplo: as divs possuem o width de 100px.
+    O container possui o width de 600px.
+    No total, as divs ocupam 400px.
+    Sobra um espaço vazio dentro do container de 200px.
+    Esses 200px é separado igualmente para cada div. (no caso se todas tiverem o peso 1).
+    Dessa forma, as divs ocupam todo o espaço do container com a mesma largura.
+    */
+    flex-grow: 1;
+}
+
+.flex-container div:nth-child(3){
+    background-color: brown;
+    /* Com o peso 2, não significa que ele vai ter o dobro do tamanho. Ele apenas pega uma parcela do que sobrou multiplicada por 2, enquanto os outros são multiplicados por 1. Ou seja, se sobrar 40px para cada div,  com o peso 2 pega 80px.*/
+    flex-grow: 2;
+}
+
