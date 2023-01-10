@@ -1,0 +1,10 @@
+div{
+    display: flex;
+    width: 50%;
+    /* para alinhar o container que possui mais de uma linha de items */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+}
