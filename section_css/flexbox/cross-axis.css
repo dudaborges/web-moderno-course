@@ -1,0 +1,27 @@
+div{
+    border: solid 5px dodgerblue;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.big{
+    font-size: 1.5em;
+}
+/* o eixo principal por padrão é em linha. O cross axis neste caso é a coluna. É possivel editar o cross axis com as seguintes propriedades.*/
+.flex-container{
+    display: flex;
+    height: 400px;
+    width: 50%;
+    flex-wrap: wrap;
+    /* alinha os items da direção do cross axis, que nesse caso é o eixo y */
+    /* o stretch é o padrão */
+    align-items: stretch;
+    /* alinha pelo baseline (linha de base). Apesar do tamanho das fontes diferentes, com o baseline, todos os items ficam alinhados pela linha do centro. */
+    align-items: baseline;
+    /* alinha por cima */
+    align-items: flex-start;
+    /* alinha embaixo */
+    align-items: flex-end;
+    /* alinha no centro do cross axis*/
+    align-items: center;
+}
