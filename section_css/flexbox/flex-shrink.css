@@ -1,0 +1,19 @@
+.flex-container{
+    display: flex;
+    border: 3px solid black;
+    width: 600px;
+    height: 300px;
+}
+
+.flex-container div{
+    border: 2px solid rebeccapurple;
+    font-size: 30px;
+    width: 100px;
+    flex-shrink: 1;
+}
+
+.flex-container div:nth-child(3){
+    background-color: brown;
+    /* Ao invés de aumentar como o flex grow, ele encole. */
+    flex-shrink: 5;
+}
