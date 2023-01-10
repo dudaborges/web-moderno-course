@@ -1,0 +1,11 @@
+.flex-container{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    flex-direction: column;
+}
+
+.flex-container div{
+    /* se o main for o eixo x altera o width, e se for o eixo y altera o height */
+    flex-basis: 200px;
+}
