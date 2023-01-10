@@ -1,0 +1,35 @@
+.flex-container{
+    display: flex;
+    border: 3px solid rgb(2, 2, 104);
+    width: 50%;
+    height: 300px;
+}
+
+.flex-container div{
+    font-size: 30px;
+    border: 2px solid rgb(99, 66, 16);
+    width: 100px;
+    text-align: center;
+}
+
+.flex-container div:nth-child(1){
+    background-color: rgb(28, 123, 144);
+    /* para alinhar um item específico */
+    align-self: flex-end;
+}
+
+.flex-container div:nth-child(2){
+    background-color: brown;
+    align-self: flex-start;
+}
+
+.flex-container div:nth-child(3){
+    background-color: rgb(75, 42, 165);
+    align-self: center;
+}
+
+.flex-container div:nth-child(4){
+    background-color: rgb(165, 42, 165);
+    /* padrão */
+    align-self: stretch;
+}
