@@ -1,0 +1,79 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+header.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33, 32, 32);
+    padding: 10px;
+    border-bottom: solid 2px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+header.cabecalho div.logo{
+    display: flex;
+    width: 300px;
+    height: 80px;
+    align-items: center;
+}
+
+div.logo img{
+    width: 100%;
+}
+
+div.logo a{
+    font-size: 0;
+    padding: 0;
+}
+
+.menu{
+    flex-grow: 10;
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+nav.menu li{
+    margin: 0 10px;
+}
+
+a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.menu a:hover,
+.menu a.selected{
+    background-color: #4faddb;
+}
+
+.autenticacao{
+    font-size: 20px;
+    right: 0px;
+    margin: 20px 15px;
+}
+
+.autenticacao > a:nth-of-type(1){
+    margin-right: 15px;
+}
+
+.autenticacao > a:nth-of-type(2){
+    background-color: brown;
+    border-radius: 15px;
+    padding: 10px;
+
+}
