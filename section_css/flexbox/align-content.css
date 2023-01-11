@@ -1,7 +1,7 @@
 div{
     display: flex;
     width: 50%;
-    /* para alinhar o container que possui mais de uma linha de items */
+    /* para alinhar o container que possui mais de uma linha de items. Utilizando o align itens para items com mais de uma linha, ele irá alinhas apenas na própria linha e não dentro do flex container.*/
     align-content: flex-start;
     align-content: flex-end;
     align-content: center;
