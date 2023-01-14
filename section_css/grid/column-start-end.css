@@ -32,3 +32,8 @@ div {
     grid-row-start: 3;
     grid-row-end: 5 ;
 }
+
+.d7{
+    /* decide quem vai ficar na frente ou atrás quando houver sobreposição */
+    z-index: 2;
+}
