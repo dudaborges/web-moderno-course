@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* nomeando o espaço de cada elemento */
+
+header{
+    grid-area:cabecalho;
+}
+
+nav{
+    grid-area: navegacao;
+}
+
+main{
+    grid-area: conteudo;
+}
+
+footer{
+    grid-area: rodape;
+}
+
+body{
+    display: grid;
+    /* para ocupar a altura da tela inteira */
+    height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    /* para organizar os elementos nesses 6 espaços (2 colunas e 3 linhas) */
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'navegacao conteudo' 
+        'rodape rodape'   
+    ;
+}
+
+
+
