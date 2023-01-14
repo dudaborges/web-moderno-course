@@ -35,5 +35,21 @@ body{
     ;
 }
 
+@media(max-width: 700px){
+    body{
+        /* para mudar para uma única coluna */
+        grid-template-columns: 1fr;
+        /* forma 3 linhas, sendo a terceira que vai ocupar a maior parte do espaço */
+        grid-template-rows: 80px 1fr 80px;
+        grid-template-areas: 
+            'navegacao'
+            'conteudo'
+            'rodape'
+        ;
+    }
+
+    header{display: none};
+}
+
 
 
