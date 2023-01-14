@@ -10,6 +10,11 @@ body{
     /* nomeando as linhas */
     grid-template-columns: [inicio] 1fr [metade-meio-1] 1fr [metade-meio-2] 1fr [fim];
     grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    /* shorthand de gap */
+    /* gap linha e gap coluna */
+    gap: 10px 20px;
 }
 
 div{
@@ -25,5 +30,7 @@ div{
     /* começa no início e termina no fim */
     grid-column: metade-meio-1 / fim;
     grid-row: 1 / span 2;
+    /* row-start column-start row-end column-end */
+   grid-area: 2 / metade-meio-1 / 4 / fim;
 }
 
