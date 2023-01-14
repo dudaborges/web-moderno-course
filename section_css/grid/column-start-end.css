@@ -29,4 +29,6 @@ div {
     /* dê um span de duas casas */
     /* começa na casa 1, e ocupa as duas casas seguintes.*/
     grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: 5 ;
 }
