@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 20px;
+    height: calc(100% - 40px);
+    background-color: lightgray;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: solid 5px dodgerblue;
+    background: #fff;
+    
+}
+
+.d8{
+    background-color: red;
+    /* inicia na linha 1, no sentido vertical, e acaba na linha 4 */
+    /* os números das linhas aparecem na ferramenta do desenvolvedor no firefox */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* dê um span de duas casas */
+    /* começa na casa 1, e ocupa as duas casas seguintes.*/
+    grid-column-end: span 2;
+}
