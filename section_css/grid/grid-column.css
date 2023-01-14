@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 20px;
+    height: calc(100% - 40px);
+    background-color: lightgray;
+}
+
+body{
+    display: grid;
+    /* nomeando as linhas */
+    grid-template-columns: [inicio] 1fr [metade-meio-1] 1fr [metade-meio-2] 1fr [fim];
+    grid-template-rows: repeat(3, 1fr);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: solid 5px dodgerblue;
+    background: #fff;
+}
+
+.d1{
+    /* começa no início e termina no fim */
+    grid-column: metade-meio-1 / fim;
+    grid-row: 1 / span 2;
+}
+
