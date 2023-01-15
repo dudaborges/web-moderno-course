@@ -23,6 +23,7 @@
 .flex-container div:nth-child(3){
     background-color: brown;
     /* Com o peso 2, não significa que ele vai ter o dobro do tamanho. Ele apenas pega uma parcela do que sobrou multiplicada por 2, enquanto os outros são multiplicados por 1. Ou seja, se sobrar 40px para cada div,  com o peso 2 pega 80px.*/
+    /* não é o dobro do tamanho total, mas é o dobro do que ele vai crescer em relação aos outros. Enquanto os outros crescem 40px, ele cresce 80px. */
     flex-grow: 2;
 }
 
