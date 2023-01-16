@@ -28,6 +28,7 @@ body{
     grid-template-columns: 300px 1fr;
     grid-template-rows: 100px 1fr 100px;
     /* para organizar os elementos nesses 6 espaços (2 colunas e 3 linhas) */
+    /* é preciso nomear individualmente os elementos com grid area */
     grid-template-areas: 
         'cabecalho cabecalho'
         'navegacao conteudo' 
