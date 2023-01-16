@@ -6,6 +6,7 @@
 }
 
 .flex-container div{
+    /* por padrão, o flex basis já vem com a propriedade auto. O tamanho leva em conta as propriedades definidas: width, height, flex grow */
     /* se o main for o eixo x altera o width, e se for o eixo y altera o height */
     flex-basis: 200px;
 }
