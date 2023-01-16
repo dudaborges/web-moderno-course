@@ -3,12 +3,15 @@
     border: 3px solid black;
     width: 600px;
     height: 300px;
+    /* não pode quebrar a linha usando o flex-shrink. Por que se não os elementos desceriam, ao invés de diminuir quando o pai diminuisse o espaço */
+    flex-wrap: nowrap;
 }
 
 .flex-container div{
     border: 2px solid rebeccapurple;
     font-size: 30px;
     width: 100px;
+    /* por defaul, todos os flex items possuem flex shrink 1. Por isso eles diminuem quando acaba espaço. Ao contrário do flex grow, que por padrão os elementos não tem habilidade de crescer. */
     flex-shrink: 1;
 }
 
