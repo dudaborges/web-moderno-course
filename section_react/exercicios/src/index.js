@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Primeiro from './componentes/Primeiro'
 // importando as funcionalidades do arquivo packpage.json
 // tudo o que for jsx precisa ser importado o react
 // para usar o dom é necessário importar o react dom
@@ -14,3 +15,5 @@ ReactDOM.render(<h1>Meu primeiro React</h1>, document.getElementById('root'))
 const paragrafo = <p>Olá, mundo em React!</p>
 
 ReactDOM.render(paragrafo, document.getElementById('root'))
+
+ReactDOM.render(<Primeiro/>, document.getElementById('root'))
